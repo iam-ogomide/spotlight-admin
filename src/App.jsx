@@ -3,16 +3,22 @@ import { ThemeProvider } from "@/contexts/theme-context"
 import Layout from "./routes/Layout"
 import DashboardPage from "./routes/dashboard/page"
 import Analytics from "./routes/dashboard/Analytics"
+import Login from "./routes/dashboard/Login"
+import Register from "./routes/dashboard/Register"
 
 
 
 
 function App() {
   const router = createBrowserRouter([
-    // {
-    //   path:"/anl",
-    //   element: <Analytics />
-    // },
+    {
+      path:"/login",
+      element: <Login />
+    },
+    {
+      path:"/register",
+      element: <Register />
+    },
     {
       path: "/",
       element: <Layout />,
