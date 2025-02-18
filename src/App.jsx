@@ -12,7 +12,7 @@ import Register from "./routes/dashboard/Register"
 function App() {
   const router = createBrowserRouter([
     {
-      path:"/login",
+      path: "/",  
       element: <Login />
     },
     {
@@ -20,7 +20,7 @@ function App() {
       element: <Register />
     },
     {
-      path: "/",
+      path: "/dashboard",
       element: <Layout />,
       children: [
         {

@@ -1,29 +1,34 @@
 import React from "react";
 import image from "../../assets/chsx.png";
+import { Link } from 'react-router-dom';
+import logo from "../../assets/spotlight-logo.png"
+
+
 const Register = () => {
     return (
         <div className="flex h-screen w-full">
             <div className="flex w-full items-center justify-center lg:w-1/2">
                 <div className="w-11/12 max-w-[700px] rounded-3xl border-2 border-gray-100 bg-white px-10 py-20 mt-10">
-                    <h1 className="text-5xl font-semibold mt-10">Sign Up</h1>
-                    <p className="mt-4 text-lg font-medium text-gray-500">Welcome back! Please enter you details.</p>
+                    <img src={logo} alt="" className='mt-32'/>
+                    <h1 className="text-3xl font-semibold mt-6">Sign Up</h1>
+                    <p className="mt-4 text-sm font-medium text-gray-500">Welcome back! Please enter you details.</p>
                     <div className="mt-8">
                         <div className="flex flex-col">
-                            <label className="text-lg font-medium">Email</label>
+                            <label className="text-md font-medium">Email</label>
                             <input
                                 className="mt-1 w-full rounded-xl border-2 border-gray-100 bg-transparent p-4"
                                 placeholder="Enter your email"
                             />
                         </div>
                         <div className="mt-4 flex flex-col">
-                            <label className="text-lg font-medium">Password</label>
+                            <label className="text-md font-medium">Password</label>
                             <input
                                 className="mt-1 w-full rounded-xl border-2 border-gray-100 bg-transparent p-4"
                                 placeholder="Enter your email"
                             />
                         </div>
                         <div className="relative mt-4 flex flex-col">
-                            <label className="text-lg font-medium">Select Option</label>
+                            <label className="text-md font-medium">Select Option</label>
                             <div className="relative">
                                 <select className="mt-1 w-full appearance-none rounded-xl border-2 border-gray-100 bg-transparent p-4 pr-10">
                                     <option
@@ -49,18 +54,18 @@ const Register = () => {
                                     id="remember"
                                 />
                                 <label
-                                    className="ml-2 text-base font-medium"
+                                    className="ml-2 text-sm font-medium"
                                     for="remember"
                                 >
                                     Remember for 30 days
                                 </label>
                             </div>
-                            <button className="text-base font-medium text-violet-500">Forgot password</button>
+                            <button className="text-sm font-medium text-[#219EBC]">Forgot password</button>
                         </div>
                         <div className="mt-8 flex flex-col gap-y-4">
-                            <button className="transform rounded-xl bg-violet-500 py-4 text-lg font-bold text-white transition-all ease-in-out hover:scale-[1.01] active:scale-[.98] active:duration-75">
-                                Sign in
-                            </button>
+                        <Link to="/dashboard"  className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-[#219EBC] rounded-xl text-white font-bold text-lg items-center text-center'>
+              Sign in
+              </Link>
                             <button className="flex transform items-center justify-center gap-2 rounded-xl border-2 border-gray-100 py-4 text-lg font-semibold text-gray-700 transition-all ease-in-out hover:scale-[1.01] active:scale-[.98] active:duration-75">
                                 <svg
                                     width="24"
@@ -91,7 +96,7 @@ const Register = () => {
                         </div>
                         <div className="mt-8 flex items-center justify-center">
                             <p className="text-base font-medium">Already have an account?</p>
-                            <button className="ml-2 text-base font-medium text-violet-500">Sign in</button>
+                            <Link to="/" className="ml-2 text-base font-medium text-[#219EBC]">Sign in</Link>
                         </div>
                     </div>
                 </div>

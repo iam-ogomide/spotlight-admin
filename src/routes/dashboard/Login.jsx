@@ -1,5 +1,6 @@
 import React from 'react'
 import image from "../../assets/chsx.png";
+import logo from "../../assets/spotlight-logo.png"
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -7,11 +8,12 @@ const Login = () => {
     <div className="flex w-full h-screen">
     <div className="w-full flex items-center justify-center lg:w-1/2">
     <div className=' w-11/12 max-w-[700px] px-10 py-20 rounded-3xl bg-white border-2 border-gray-100'>
-          <h1 className='text-5xl font-semibold mt-32'>Welcome Back</h1>
-          <p className='font-medium text-lg text-gray-500 mt-4'>Welcome back! Please enter you details.</p>
+        <img src={logo} alt="" className='mt-32'/>
+          <h1 className='text-3xl font-semibold mt-6'>Welcome Back</h1>
+          <p className='font-medium text-sm text-gray-500 mt-4'>Welcome back! Please enter you details.</p>
           <div className='mt-8'>
               <div className='flex flex-col'>
-                  <label className='text-lg font-medium'>Email</label>
+                  <label className='text-md font-medium'>Email</label>
                   <input 
                 
                       
@@ -19,7 +21,7 @@ const Login = () => {
                       placeholder="Enter your email"/>
               </div>
               <div className='flex flex-col mt-4'>
-                  <label className='text-lg font-medium'>Password</label>
+                  <label className='text-md font-medium'>Password</label>
                   <input 
                 
                     
@@ -31,12 +33,12 @@ const Login = () => {
               <div className='mt-8 flex justify-between items-center'>
                   <div>
                       <input  type="checkbox" id='remember'/>
-                      <label className='ml-2 font-medium text-base' for="remember">Remember for 30 days</label>
+                      <label className='ml-2 font-medium text-sm' for="remember">Remember for 30 days</label>
                   </div>
-                  <button className='font-medium text-base text-violet-500'>Forgot password</button>
+                  <button className='font-medium text-sm text-[#219EBC]'>Forgot password</button>
               </div>
               <div className='mt-8 flex flex-col gap-y-4'>
-              <Link to="/"  className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-[#219EBC] rounded-xl text-white font-bold text-lg items-center text-center'>
+              <Link to="/dashboard"  className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-[#219EBC] rounded-xl text-white font-bold text-lg items-center text-center'>
               Sign in
               </Link>
                   
@@ -53,9 +55,7 @@ const Login = () => {
               </div>
               <div className='mt-8 flex justify-center items-center'>
                   <p className='font-medium text-base'>Don't have an account?</p>
-                  <button 
-                     
-                      className='ml-2 font-medium text-base text-violet-500'>Sign up</button>
+                 <Link to="/register" className="ml-2 text-base font-medium text-[#219EBC]">Sign Up</Link>
               </div>
           </div>
       </div>
