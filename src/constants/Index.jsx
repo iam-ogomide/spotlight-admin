@@ -12,16 +12,23 @@ export const navbarLinks = [
                 icon: Home,
                 path: "/dashboard",
             },
+            
+        ],
+    },
+    {
+        title: "Projects",
+        links: [
             {
                 label: "Analytics",
                 icon: ChartColumn,
                 path: "/dashboard/analytics",
             },
-            // {
-            //     label: "Reports",
-            //     icon: NotepadText,
-            //     path: "/dashboard/reports",
-            // },
+            {
+                label: "New Project",
+                icon: NotepadText,
+                path: "/dashboard/reports",
+            },
+          
         ],
     },
     {
@@ -40,26 +47,6 @@ export const navbarLinks = [
           
         ],
     },
-    // {
-    //     title: "Products",
-    //     links: [
-    //         {
-    //             label: "Products",
-    //             icon: Package,
-    //             path: "/products",
-    //         },
-    //         {
-    //             label: "New product",
-    //             icon: PackagePlus,
-    //             path: "/new-product",
-    //         },
-    //         {
-    //             label: "Inventory",
-    //             icon: ShoppingBag,
-    //             path: "/inventory",
-    //         },
-    //     ],
-    // },
     {
         title: "Settings",
         links: [

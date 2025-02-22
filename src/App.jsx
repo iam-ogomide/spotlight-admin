@@ -5,6 +5,7 @@ import DashboardPage from "./routes/dashboard/Page"
 import Analytics from "./routes/dashboard/Analytics"
 import Login from "./routes/dashboard/Login"
 import Register from "./routes/dashboard/Register"
+import NewProject from "./pages/NewProject"
 
 
 
@@ -37,7 +38,7 @@ function App() {
         },
         {
           path: "reports",
-          element: <h1 className="title">Reports</h1>,
+          element: <NewProject />,
         },
         {
           path: "customers",
