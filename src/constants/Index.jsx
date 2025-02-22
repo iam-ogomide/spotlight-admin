@@ -10,17 +10,17 @@ export const navbarLinks = [
             {
                 label: "Dashboard",
                 icon: Home,
-                path: "/",
+                path: "/dashboard",
             },
             {
                 label: "Analytics",
                 icon: ChartColumn,
-                path: "/analytics",
+                path: "/dashboard/analytics",
             },
             {
                 label: "Reports",
                 icon: NotepadText,
-                path: "/reports",
+                path: "/dashboard/reports",
             },
         ],
     },
@@ -30,7 +30,7 @@ export const navbarLinks = [
             {
                 label: "Customers",
                 icon: Users,
-                path: "/customers",
+                path: "/dashboard/customers",
             },
             {
                 label: "New customer",
