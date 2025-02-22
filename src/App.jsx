@@ -6,6 +6,8 @@ import Analytics from "./routes/dashboard/Analytics"
 import Login from "./routes/dashboard/Login"
 import Register from "./routes/dashboard/Register"
 import NewProject from "./pages/NewProject"
+import Evaluation from "./pages/Evaluation"
+import LeaderBoard from "./pages/LeaderBoard"
 
 
 
@@ -42,11 +44,11 @@ function App() {
         },
         {
           path: "customers",
-          element: <h1 className="title">Customers</h1>,
+          element: <Evaluation />,
         },
         {
           path: "new-customer",
-          element: <h1 className="title">New Customer</h1>,
+          element: <LeaderBoard />,
         },
         {
           path: "verified-customers",

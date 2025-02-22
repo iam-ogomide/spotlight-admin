@@ -53,7 +53,7 @@ export const navbarLinks = [
             {
                 label: "Settings",
                 icon: Settings,
-                path: "/settings",
+                path: "/dashboard/settings",
             },
         ],
     },
