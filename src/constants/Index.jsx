@@ -1,4 +1,4 @@
-import { ChartColumn, Home, NotepadText, Package, PackagePlus, Settings, ShoppingBag, UserCheck, UserPlus, Users } from "lucide-react";
+import { ChartColumn, Home, NotepadText, Package, PackagePlus, Settings, ShoppingBag, UserCheck, UserPlus, Users, Trophy } from "lucide-react";
 
 import ProfileImage from "@/assets/profile-image.jpg";
 import ProductImage from "@/assets/product-image.jpg";
@@ -17,53 +17,49 @@ export const navbarLinks = [
                 icon: ChartColumn,
                 path: "/dashboard/analytics",
             },
-            {
-                label: "Reports",
-                icon: NotepadText,
-                path: "/dashboard/reports",
-            },
+            // {
+            //     label: "Reports",
+            //     icon: NotepadText,
+            //     path: "/dashboard/reports",
+            // },
         ],
     },
     {
-        title: "Customers",
+        title: "Projects",
         links: [
             {
-                label: "Customers",
+                label: "Evaluation",
                 icon: Users,
                 path: "/dashboard/customers",
             },
             {
-                label: "New customer",
-                icon: UserPlus,
-                path: "/new-customer",
+                label: "Leaderboard",
+                icon: Trophy,
+                path: "/dashboard/new-customer",
             },
-            {
-                label: "Verified customers",
-                icon: UserCheck,
-                path: "/verified-customers",
-            },
+          
         ],
     },
-    {
-        title: "Products",
-        links: [
-            {
-                label: "Products",
-                icon: Package,
-                path: "/products",
-            },
-            {
-                label: "New product",
-                icon: PackagePlus,
-                path: "/new-product",
-            },
-            {
-                label: "Inventory",
-                icon: ShoppingBag,
-                path: "/inventory",
-            },
-        ],
-    },
+    // {
+    //     title: "Products",
+    //     links: [
+    //         {
+    //             label: "Products",
+    //             icon: Package,
+    //             path: "/products",
+    //         },
+    //         {
+    //             label: "New product",
+    //             icon: PackagePlus,
+    //             path: "/new-product",
+    //         },
+    //         {
+    //             label: "Inventory",
+    //             icon: ShoppingBag,
+    //             path: "/inventory",
+    //         },
+    //     ],
+    // },
     {
         title: "Settings",
         links: [

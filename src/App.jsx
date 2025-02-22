@@ -1,7 +1,7 @@
 import {createBrowserRouter, RouterProvider, Navigate} from "react-router-dom"
 import { ThemeProvider } from "@/contexts/theme-context"
 import Layout from "./routes/Layout"
-import DashboardPage from "./routes/dashboard/page"
+import DashboardPage from "./routes/dashboard/Page"
 import Analytics from "./routes/dashboard/Analytics"
 import Login from "./routes/dashboard/Login"
 import Register from "./routes/dashboard/Register"
