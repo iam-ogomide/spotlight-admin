@@ -8,6 +8,7 @@ import Register from "./routes/dashboard/Register"
 import NewProject from "./pages/NewProject"
 import Evaluation from "./pages/Evaluation"
 import LeaderBoard from "./pages/LeaderBoard"
+import Otp from "./auth/Otp"
 
 
 
@@ -25,6 +26,10 @@ function App() {
     {
       path: "/register",
       element: <Register />,
+    },
+    {
+      path: "/otp",
+      element: <Otp />,
     },
     {
       path: "/dashboard",

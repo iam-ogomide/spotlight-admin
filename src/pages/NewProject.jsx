@@ -49,9 +49,9 @@ const NewProject = () => {
           />
         </div>
 
-        {/* <div className="space-y-2">
+        <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
-            Price
+            Deadline
           </label>
           <input
             type="text"
@@ -60,7 +60,7 @@ const NewProject = () => {
             value={formData.price}
             onChange={(e) => setFormData(prev => ({ ...prev, price: e.target.value }))}
           />
-        </div> */}
+        </div>
 
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
