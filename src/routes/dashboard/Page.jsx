@@ -1,9 +1,13 @@
 import React from 'react'
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis,  BarChart, Bar, CartesianGrid, PieChart, Pie, Cell,Legend } from "recharts";
 
-import { useTheme } from "@/hooks/use-theme";
+// import { useTheme } from "@/hooks/use-theme";
 
-import { overviewData, recentSalesData, topProducts } from "@/constants";
+import { useTheme } from "../../hooks/use-theme";
+
+// import { overviewData, recentSalesData, topProducts } from "@/constants";
+
+import { overviewData, recentSalesData, topProducts } from "../../constants/Index" ;
 
 // import { Footer } from "@/layouts/footer";
 
