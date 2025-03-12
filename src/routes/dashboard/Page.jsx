@@ -5,9 +5,10 @@ import { useTheme } from "@/hooks/use-theme";
 
 import { overviewData, recentSalesData, topProducts } from "@/constants";
 
-import { Footer } from "@/layouts/footer";
+// import { Footer } from "@/layouts/footer";
 
 import { CreditCard, DollarSign, Package, PencilLine, Star, Trash, TrendingUp, Users, Briefcase, Trophy, Target, User} from "lucide-react";
+import { Footer } from '../../layouts/Footer';
 
 const DashboardPage = () => {
   const { theme } = useTheme();
@@ -209,6 +210,7 @@ const DashboardPage = () => {
             </div>
         </div>
     </div>
+    {/* <Footer /> */}
     <Footer />
 </div>
   )
