@@ -5,7 +5,6 @@ import { useTheme } from "@/hooks/use-theme";
 
 import { overviewData, recentSalesData, topProducts } from "@/constants";
 
-import { Footer } from "@/layouts/footer";
 
 import { CreditCard, DollarSign, Package, PencilLine, Star, Trash, TrendingUp, Users, Briefcase, Trophy, Target, User} from "lucide-react";
 
@@ -14,7 +13,9 @@ const Analytics = () => {
   const { theme } = useTheme();
 
   return (
-    <div className=""></div>
+    <div className="">
+        <h1>Analytics Page</h1>
+    </div>
     // <div className="card">
     //     <div className="card-header">
     //         <p className="card-title">Top Orders</p>
