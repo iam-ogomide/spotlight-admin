@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
 import { useState } from 'react';
 import { LoaderCircle } from 'lucide-react';
+import { toast } from 'react-toastify';
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -37,7 +38,7 @@ const Login = () => {
             navigate("/dashboard")
         },
         onError: (error) => {
-            console.error('Login error:', error)
+            toast.error(`${error.message}`)
         }
     })
 

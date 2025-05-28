@@ -9,6 +9,7 @@ import NewProject from "./pages/NewProject"
 import Evaluation from "./pages/Evaluation"
 import LeaderBoard from "./pages/LeaderBoard"
 import Otp from "./auth/Otp"
+import { ToastContainer } from "react-toastify"
 
 function App() {
   const router = createBrowserRouter([
@@ -79,6 +80,7 @@ function App() {
   return (
     <ThemeProvider storageKey="theme">
        <RouterProvider router={router} />
+       <ToastContainer />
     </ThemeProvider>
   )
 }
