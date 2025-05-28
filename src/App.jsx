@@ -10,9 +10,6 @@ import Evaluation from "./pages/Evaluation"
 import LeaderBoard from "./pages/LeaderBoard"
 import Otp from "./auth/Otp"
 
-
-
-
 function App() {
   const router = createBrowserRouter([
     {
